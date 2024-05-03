@@ -30,7 +30,7 @@ module anode_control (
 always @(refreshcounter) begin
   case (refreshcounter)
     2'b00: 
-      anode = 4'b1100; // digit 1 ON
+      anode = 4'b1110; // digit 1 ON
     2'b01:
       anode = 4'b1101; // digit 2 ON
     2'b10:
