@@ -1,5 +1,8 @@
 module top (
   input wire clk,
+  input BTN_SET,  // M18    
+  input BTN_GET,   // N17
+  input BTN_RES,  //CPU_RESETN C12
   input wire [15:0] switch,
   output wire [3:0] anode,
   output wire [7:0] cathode
@@ -7,6 +10,8 @@ module top (
   wire refresh_clock;
   wire [1:0] refreshcounter;
   wire [3:0] ONE_DIGIT;
+
+
 
   reg rst = 0;
   reg enable = 1;
@@ -27,11 +32,24 @@ module top (
     .anode(anode)
   );
 
+  wire [15:0] mru_data_out;
+  wire [3:0] mru_data_size;
+  mru mru_object(){
+    .clk(),
+    .rst(BTN_RES),
+    .set(BTN_SET),
+    .data(switch),
+    .getData(BTN_GET), // flagToGetData
+    .enable(1),
+    .dataToOut(mru_out),
+    .dataSize(mru_data_size)
+  }
+
   BCD_control BCD_ctrl_wapper (
-    .digit1(switch[3:0]),
-    .digit2(switch[7:4]),
-    .digit3(switch[11:8]),
-    .digit4(switch[15:12]),
+    .digit1(mru_out[3:0]),
+    .digit2(mru_out[7:4]),
+    .digit3(mru_out[11:8]),
+    .digit4(mru_out[15:12]),
     .refreshcounter(refreshcounter),
     .ONE_DIGIT(ONE_DIGIT)
   );
