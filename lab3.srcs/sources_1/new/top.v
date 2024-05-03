@@ -35,7 +35,7 @@ module top (
   wire [15:0] mru_data_out;
   wire [3:0] mru_data_size;
   mru mru_object(){
-    .clk(),
+    .clk(refresh_clock),
     .rst(BTN_RES),
     .set(BTN_SET),
     .data(switch),
