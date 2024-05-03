@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sim_1/new/top_tb.v,1714740540,verilog,,,,top_tb,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/BCD_control.v,1714735069,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/BCD_to_Cathodes.v,,BCD_control,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/BCD_to_Cathodes.v,1714739283,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/anode_control.v,,BCD_to_Cathodes,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/anode_control.v,1714735060,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/freq_div.v,,anode_control,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/freq_div.v,1714740752,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/refreshcounter.v,,freq_div,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/refreshcounter.v,1714734683,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/top.v,,refreshcounter,,,,,,,,
+C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sources_1/new/top.v,1714742388,verilog,,C:/Users/aleksejlapin/ITMO/DigitalCircut/lab3/lab3.srcs/sim_1/new/top_tb.v,,top,,,,,,,,
